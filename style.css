@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔷 Custom glow for futuristic look */
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 16px rgba(56, 189, 248, 0.8));
+}
+
+/* 🌩️ Lightning animation */
+@keyframes flash {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.lightning {
+  animation: flash 1.5s infinite;
+}
+
+/* 🌧️ Animated rain background */
+.rain-bg {
+  background: linear-gradient(to bottom, rgba(15,23,42,0.8), rgba(3,7,18,0.9)),
+              url("https://i.ibb.co/hLLsTsp/rain-bg.gif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 🌤️ Sunny background */
+.sunny-bg {
+  background: linear-gradient(to bottom, #38bdf8, #0ea5e9);
+}
+
+/* ❄️ Snow background */
+.snow-bg {
+  background: linear-gradient(to bottom, #e0f2fe, #bae6fd);
+}
+
+/* 🌫️ Cloudy background */
+.cloudy-bg {
+  background: linear-gradient(to bottom, #334155, #1e293b);
+}
