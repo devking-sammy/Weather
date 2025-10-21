@@ -187,8 +187,12 @@ export default function WeatherApp() {
         transition={{ duration: 1 }}
         className="relative z-10 bg-black/30 backdrop-blur-xl rounded-3xl shadow-2xl p-8 w-full max-w-6xl border border-white/20"
       >
-        <h1 className="text-4xl font-extrabold text-center text-cyan-300 mb-8">
-          🌦️ Weather App
+        <h1 className="flex items-center justify-center gap-3 text-4xl font-extrabold text-center text-cyan-300 mb-8">
+          <img
+            src="/assets/logo-m.png"
+            alt="SkyPulse Logo"
+            className="w-50 h-50 object-contain drop-shadow-lg"
+          />
         </h1>
 
         {/* 📍 Location Search Bar */}
